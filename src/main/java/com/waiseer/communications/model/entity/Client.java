@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,7 +14,7 @@ import lombok.*;
 @Setter
 @ToString
 @Builder
-@Table
+@Table(name = "clients")
 
 public class Client {
 
@@ -20,9 +22,11 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long clientId;
 
-    @Column(nullable = false,unique = true)
-    private String email;
+    private String name;
 
-    private String telephone;
+   /* @OneToMany
+    private List<Phone> phones;
 
+    @OneToMany
+    private List<Email> emails;*/
 }

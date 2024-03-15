@@ -1,5 +1,6 @@
 package com.waiseer.communications.model.dto;
 
+import com.waiseer.communications.model.entity.Client;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,9 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class ClientResponse {
+public class PhoneRequest {
 
-    private Long clientId;
-    private String name;
-
+    private Long phoneId;
+    private String phoneNumber;
 }

@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ClientRequest {
 
-    private String email;
-    private String telephone;
+    private String name;
 
 }
