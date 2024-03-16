@@ -24,9 +24,4 @@ public class Client {
 
     private String name;
 
-   /* @OneToMany
-    private List<Phone> phones;
-
-    @OneToMany
-    private List<Email> emails;*/
 }

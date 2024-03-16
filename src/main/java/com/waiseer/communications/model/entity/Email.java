@@ -18,6 +18,7 @@ public class Email {
     private Long emailId;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn/*(name = "client_id", nullable = false)*/
     private Client client;
 
     private String emailAddress;
